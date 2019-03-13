@@ -100,9 +100,6 @@ class SnakeCanvas(context: Context, attrs: AttributeSet)
     fun moveLeft ()
     {
         snakeHead.setVelocity(-this.width/15f,0f)
-        animate(FRAMES_PER_SECOND) {
-            tick()
-        }
     }
 
     fun moveRight ()
